@@ -107,6 +107,12 @@
     width: 85%;
 }
 
+@media screen and (max-width: 767.5px) {
+    .column-left-image img{
+        display: none;
+    }
+}
+
 .scrollable {
     margin: 5px;
     padding: 5px;
