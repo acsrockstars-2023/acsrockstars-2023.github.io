@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Adobe Clean";
+    src: url(../adobe-clean-cufonfonts/AdobeCleanBlack.otf);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.top-center {
+    padding: 1rem;
+    text-align: center;
+}
+
+.top-section {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    height: 7rem;
+    background: rgb(203, 0, 255);
+    background: linear-gradient(90deg,
+            rgba(203, 0, 255, 1) 0%,
+            rgba(206, 5, 240, 1) 3%,
+            rgba(231, 47, 142, 1) 45%,
+            rgba(232, 48, 139, 1) 46%,
+            rgba(248, 75, 75, 1) 81%,
+            rgba(255, 86, 51, 1) 100%);
+}
+
+@media screen and (max-width: 767.5px) {
+    .top-section {
+        height: 10rem;
+    }
+
+}
+
+
+h1 {
+    font-family: "Adobe Clean";
+}
+
+.agenda-content-bangalore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agenda-content-noida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agenda-head {
+    padding: 1rem;
+    font-family: "Adobe Clean Regular";
+}
+
+.agenda-buttons button {
+    border: none;
+    background-color: transparent;
+    font-family: "Adobe Clean";
+    color: white;
+    font-size: large;
+}
+
+.agenda-buttons button:hover {
+    text-decoration: underline;
+}
+
+.agenda-buttons {
+    padding-bottom: 1rem;
+}
+
+.agenda-svg {
+    padding: 2rem;
+}
+
+.agenda-svg .agenda-text-content {
+    font-size: large;
+}
+
+.agenda-svg svg {
+    height: 50rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .agenda-svg svg {
+        height: 50rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .agenda-svg svg {
+        height: 30rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .agenda-svg svg {
+        height: 20rem;
+        width: 100%;
+    }
+}
+
+.event-location {
+    padding: 5rem;
+    text-align: center;
+    /* display: flex; */
+}
+
+.event-location p{
+    padding: 1rem;
+}
+
+.location-map {
+    padding: 2rem;
+}
+
+.location-map iframe {
+
+    width: 800px;
+    height: 500px;
+}
+
+@media screen and (max-width: 730px) and (min-width: 640px) {
+    .location-map iframe {
+
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 640px) and (min-width: 350px) {
+    .location-map iframe {
+
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .location-map iframe {
+
+        width: 200px;
+        height: 180px;
+    }
+}
+
+.location-header {
+    font-family: "Adobe Clean";
+    color: #eb100e;
+    /* padding: 5rem; */
+}
+
+.keep-underline {
+    text-decoration: underline;
+}
