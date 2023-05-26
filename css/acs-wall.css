@@ -37,11 +37,20 @@
 }
 
 .wall-section {
-    padding: 2rem 7rem 0 7rem;
+    display: flex;
+    padding: 2rem 4rem;
     gap: 3rem;
 }
 
-@media screen and (max-width: 950px) and (min-width: 409px) {
+
+@media screen and (max-width: 850px) {
+    .wall-section {
+       flex-direction: column;
+    }
+    
+}
+
+/* @media screen and (max-width: 950px) and (min-width: 409px) {
     .wall-section {
         padding: 2rem 4rem 0 4rem;
         gap: 1rem;
@@ -52,7 +61,7 @@
     .wall-section {
         padding: 2rem 1rem 0 1rem ;
     }
-}
+} */
 
 .about-acs h2 {
     font-weight: bolder;
@@ -75,7 +84,8 @@
 
 .acs-icons {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     padding-top: 1rem;
     gap: 1.5rem;
 }
@@ -107,6 +117,7 @@
     }
 }
 
+
 .about-acs span,
 .acs-testimonials span,
 .icon-text {
@@ -117,6 +128,9 @@
 .acs-testimonials span {
     font-size: x-large;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .acs-testimonials span {
@@ -129,30 +143,48 @@
     font-weight: lighter;
 }
 
-.acs-testimonials .carousel-indicators button {
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video{
+    width: 100%;
+    padding-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  video{
+    min-width: 550px;
+  }  
+}
+
+
+/* .acs-testimonials .carousel-indicators button {
     height: 0.5rem !important;
     width: 0.5rem !important;
     margin: 0 0.5rem !important;
     border-radius: 100%;
     background-color: #6e2c90 !important;
-}
+} */
 
-.carousel-indicators {
+/* .carousel-indicators {
     margin-bottom: -2rem !important;
 }
 
 .carousel-item {
     padding: 0.5rem 0;
-}
+} */
 
-.wall-section .carousel-inner .carousel-item .card {
+/* .wall-section .carousel-inner .carousel-item .card {
     height: 15rem;
     border-radius: 2rem;
     background-color: #f5f5f5;
     margin: 1rem;
-}
+} */
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .wall-section .carousel-inner .carousel-item .card {
         height: 15rem;
         width: 20rem;
@@ -172,20 +204,19 @@
         margin: auto;
         width: 15rem;
     }
-}
+} */
 
 .card-container {
     /* padding: 1rem; */
 }
 
-.carousel-item {
+/* .carousel-item {
     padding-top: 2rem
 }
 
 .carousel-inner .carousel-item .card .card-body {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
     gap: 0.5rem;
     padding: 1rem;
@@ -197,19 +228,19 @@
 
 .carousel-inner .carousel-item .card .card-body .card-img{
     width: 30%;
-}
+} */
 
 .flex-this{
     display: flex;
 }
 
-.carousel-card-desc{
+/* .carousel-card-desc{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
-.acs-testimonials .carousel-inner .carousel-item .card .card-body .card-img img{
+/* .acs-testimonials .carousel-inner .carousel-item .card .card-body .card-img img{
     border-radius: 50%;
     width: 60%;
 }
@@ -249,10 +280,10 @@
     width: 1.5rem!important;
     height: 1.5rem!important;
 } */
-
+/* 
 .acs-testimonials .carousel .carousel-control-next-icon{
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-8 -7 32 32' fill='%23fff'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
 }
 .acs-testimonials .carousel .carousel-control-prev-icon{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-8 -7 32 32' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")
-}
+}  */
